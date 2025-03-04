@@ -1,16 +1,13 @@
-
-/* Your CSS Code here. */
 .holder {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px; /* Adjust spacing between items */
+    display: flex; /* Ensures it's a flex container */
+    justify-content: space-between; /* Ensures space between items */
+    flex-wrap: wrap; /* Ensures items go to the next row if needed */
+    width: 100%; /* Ensures full width */
 }
 
 .item {
-    flex: 1; /* Allows items to grow */
-    min-width: 100px; /* Prevents items from getting too small */
+    flex-grow: 1; /* Allows items to grow */
+    min-width: 100px; /* Prevents items from squashing */
     padding: 10px;
     background-color: lightblue;
     text-align: center;
